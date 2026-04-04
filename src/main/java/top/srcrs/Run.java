@@ -74,10 +74,12 @@ public class Run {
      * 用户所关注的贴吧数量
      */
     private static Integer followNum = 50;
-    
-    System.setOut(new java.io.PrintStream(new java.io.PrintWriter(System.out, true)));
+
 
     public static void main(String[] args) {
+            
+        System.setOut(new java.io.PrintStream(new java.io.PrintWriter(System.out, true)));
+        
         Cookie cookie = Cookie.getInstance();
         // 存入Cookie，以备使用
         if (args.length == 0) {
