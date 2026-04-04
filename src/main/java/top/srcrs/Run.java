@@ -78,7 +78,7 @@ public class Run {
 
     public static void main(String[] args) {
             
-        System.setOut(new java.io.PrintStream(new java.io.PrintWriter(System.out, true)));
+        System.setOut(new java.io.PrintStream(System.out, true));
         
         Cookie cookie = Cookie.getInstance();
         // 存入Cookie，以备使用
